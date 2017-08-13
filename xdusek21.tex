@@ -1,13 +1,11 @@
-\documentclass[a4paper, 11pt]{article}
-\usepackage[left=1.5cm,text={18cm, 25cm},top=2.5cm]{geometry}
+% Set document properties as required by FEKT specification
+\documentclass[a4paper, 12pt]{article}
+\usepackage[left=3cm,right=2cm,top=4cm]{geometry}
+
+% Local settings
 \usepackage[utf8x]{inputenc} 
 \usepackage[czech]{babel}
 \usepackage[IL2]{fontenc}
-\providecommand{\uv}[1]{\quotedblbase #1\textquotedblleft}
-
-% Thesis variables
-\newcommand{\thesisname}{Implementace informační bezpečnosti do ŠVP pro Informatiku a výpočetní techniku na gymnáziích}
-
 \usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -21,24 +19,38 @@
     urlcolor=black
 }
 
+% Set line spacing for whole document (sadly)
+\renewcommand{\baselinestretch}{1.5}
+
+% Helper commands
+\providecommand{\uv}[1]{\quotedblbase #1\textquotedblleft}
+
+% Thesis variables
+\newcommand{\thesisname}{Implementace informační bezpečnosti do ŠVP pro Informatiku a výpočetní techniku na gymnáziích}
 \title{\thesisname}
 \author{Bc. Daniel Dušek}
 
+
+
 \begin{document}
 
+
+% === FRONT PAGE ===
+% TODO: Work on this so it looks like a proper front page
+% Remove line height from this page
+% Already tried: thispagestyle/pagestyle set to empty, not working
 \thispagestyle{empty}
 \begin{center}
-\Huge
-\textsc{Fakulta informačních technologií, Vysoké učení technické v~Brně}\\
-\LARGE
-\vspace{\stretch{0.382}}
-% Here should come title text, or what
-\thesisname
-\vspace{\stretch{0.618}}
+    \Huge
+    \textsc{Fakulta informačních technologií, Vysoké učení technické v~Brně}\\
+    \LARGE
+    \vspace{\stretch{0.382}}
+    \thesisname
+    \vspace{\stretch{0.618}}
 \end{center}
-{\Large \hfill \textbf{Vedoucí práce}: PhDr. Petra Fiľová}\\
-\\
-{\Large \today \hfill \textbf{Autor práce}: Bc. Daniel Dušek}~~~~~~~~\\
+    {\Large \hfill \textbf{Vedoucí práce}: PhDr. Petra Fiľová}\\
+    \\
+    {\Large \today \hfill \textbf{Autor práce}: Bc. Daniel Dušek}~~~~~~~~\\
 
 
 % WORK TODO LIST
@@ -47,12 +59,15 @@
 
 
 
+% === TABLE OF CONTENTS ===
+% Potential TODO: NO line spacing as well?
 \newpage
+\thispagestyle{empty}
 \tableofcontents
+
 
 % SECTION INTRODUCTION
 % PAGE COUNTER RESET
-% THIS IS THEORETICAL PART
 \newpage
 \setcounter{page}{1}
 \section{Úvod}
@@ -85,6 +100,7 @@
 % Hacker
 
 
+
 % TODO: Revise the last sentence. Maybe add some more suggar to the sentece.
 Stejně jako bylo devatenácté století nazývané stoletím páry a dvacáté století stoletím techniky, bude jednou pravděpodobně dvacáté první století nazývané stoletím počítačů a sítí. Oblast techniky a informačních technologií se rozvíjí neustále vyšší a vyšší rychlostí, dostupnost \uv{chytré} elektroniky se zvyšuje tempem podobným. Společně s technikou a její vyšší dostupností se však objevuje další, bohužel nepříjemný, fenomén \-- a sice zneužívání technologií a jejich vysoké dostupnosti k páchání trestné činnosti. 
 
@@ -113,29 +129,29 @@ Nyní však nastává nová éra, kdy zařízení schopná připojení k Interne
 
 \section{Kapitola 1 - RVP, ŠVP konkrétní školy, ...}
 % TODO FILL THIS SECTION WITH SOMETHING USEFULL
-Bez dalších poznámek, pravděpodobně půjde o rozbor toho co mi bude k dispozici (pokud nezískám ŠVP, asi se pustím do počtu hodin z RVP a zkusím vygooglit ŠVP nějaké školy, co to má veřejně). Patří sem informace o ŠVP/RVP, počet hodin na týden.
+%Bez dalších poznámek, pravděpodobně půjde o rozbor toho co mi bude k dispozici (pokud nezískám ŠVP, asi se pustím do počtu hodin z RVP a zkusím vygooglit ŠVP nějaké školy, co to má veřejně). Patří sem informace o ŠVP/RVP, počet hodin na týden.
 
 \section{Kapitola 2 - Vstupní dovednosti, ... to be clarified}
 % TODO FILL THIS SECTION WITH SOMETHING USEFULL
-Bodově z konzultace: předpokládané vstupní dovednosti, ve kterých ročnících by se to mělo vyučovat (předběžně domluveno na všechny), probrat možné formy výuky (výklad, exkurze, protip: přivedení člověka odsouzeného za trestnou činnost (část s vysvětlováním právní závadnosti)), formy výuky (co to vůbec je? :D), potřebné pomůcky pro realizaci: jak výkonné musí být počítače, jaké by měly být jejich parametry (asi internet je třeba), jde využít telefony (jak?), interaktivní tabule
+%Bodově z konzultace: předpokládané vstupní dovednosti, ve kterých ročnících by se to mělo vyučovat (předběžně domluveno na všechny), probrat možné formy výuky (výklad, exkurze, protip: přivedení člověka odsouzeného za trestnou činnost (část s vysvětlováním právní závadnosti)), formy výuky (co to vůbec je? :D), potřebné pomůcky pro realizaci: jak výkonné musí být počítače, jaké by měly být jejich parametry (asi internet je třeba), jde využít telefony (jak?), interaktivní tabule
 
 
 % THIS IS PRACTICAL PART 
 \section{Kapitola 3 - OBSAHOVÁ ČÁST - tématický plán výuky}
 % TODO FILL THIS SECTION WITH SOMETHING USEFULL
-Bez dalších poznámek, hádám, že tady si budu muset nastudovat jak vypadá tématický plán výuky a pokusit se přijít s vlastním (asi různý témata: spoofing mailů, nedůvěryhodnost spojení se stránkami (možnost napodobení jejich vzhledu), rozeznávání potenciálních útočníků (možná cool hra pro třídu - každému dát papírek s informací, kterou má z někoho zjistit, aniž by si toho ten někdo byl vědom; ne na hodinu ale jako domácí úkol na týden?), nevyžádaná pošta, právní stránka věci)
+%Bez dalších poznámek, hádám, že tady si budu muset nastudovat jak vypadá tématický plán výuky a pokusit se přijít s vlastním (asi různý témata: spoofing mailů, nedůvěryhodnost spojení se stránkami (možnost napodobení jejich vzhledu), rozeznávání potenciálních útočníků (možná cool hra pro třídu - každému dát papírek s informací, kterou má z někoho zjistit, aniž by si toho ten někdo byl vědom; ne na hodinu ale jako domácí úkol na týden?), nevyžádaná pošta, právní stránka věci)
 
 
 \section{Kapitola 4 - Osnova témat v jednotlivých ročnících}
 % TODO FILL THIS SECTION WITH SOMETHING USEFULL
-Bodově z konzultace: doplnit o didaktické hry (viz. výše), postupy a návody jak to učit. Jestli demonstrace, nebo jen teorie (vždycky demonstrace imho).
+%Bodově z konzultace: doplnit o didaktické hry (viz. výše), postupy a návody jak to učit. Jestli demonstrace, nebo jen teorie (vždycky demonstrace imho).
 
 \section{Kapitola 5 - 4 ukázky příprav na hodinu}
 % TODO FILL THIS SECTION WITH SOMETHING USEFULL
-Asi potenciálně nejdelší část, hodně si s tím vyhraju, naplánuji časově co se v kolika hodinách bude dělat... ideální bude asi zakomponovat falšování mailu a ukázka jak snadné je udělat aby stránka vypadala stejně jako originální stránka, aniž by byla.
+%Asi potenciálně nejdelší část, hodně si s tím vyhraju, naplánuji časově co se v kolika hodinách bude dělat... ideální bude asi zakomponovat falšování mailu a ukázka jak snadné je udělat aby stránka vypadala stejně jako originální stránka, aniž by byla.
 
 % SECTION CONCLUSION
 \section{Závěr}
-Zhodnocení celé práce, zhruba na 1 A4
+%Zhodnocení celé práce, zhruba na 1 A4
 
 \end{document}
