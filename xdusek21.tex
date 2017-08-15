@@ -6,6 +6,7 @@
 \usepackage[utf8x]{inputenc} 
 \usepackage[czech]{babel}
 \usepackage[IL2]{fontenc}
+\usepackage{afterpage}
 \usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -24,9 +25,14 @@
 
 % Helper commands
 \providecommand{\uv}[1]{\quotedblbase #1\textquotedblleft}
+\newcommand\textbox[1]{%
+    \parbox{.5\textwidth}{#1}%
+}
 
 % Thesis variables
-\newcommand{\thesisname}{Implementace informační bezpečnosti do ŠVP pro Informatiku a výpočetní techniku na gymnáziích}
+\newcommand{\thesisName}{Implementace informační bezpečnosti do ŠVP pro Informatiku a výpočetní techniku na gymnáziích}
+\newcommand{\universityName}{VYSOKÉ~~~UČENÍ~~~TECHNICKÉ~~~V~BRNĚ}
+\newcommand{\facultyName}{Fakulta elektrotechniky a komunikačních technologií}
 \title{\thesisname}
 \author{Bc. Daniel Dušek}
 
@@ -34,23 +40,30 @@
 
 \begin{document}
 
-
 % === FRONT PAGE ===
-% TODO: Work on this so it looks like a proper front page
-% Remove line height from this page
-% Already tried: thispagestyle/pagestyle set to empty, not working
 \thispagestyle{empty}
-\begin{center}
-    \Huge
-    \textsc{Fakulta informačních technologií, Vysoké učení technické v~Brně}\\
-    \LARGE
-    \vspace{\stretch{0.382}}
-    \thesisname
-    \vspace{\stretch{0.618}}
-\end{center}
-    {\Large \hfill \textbf{Vedoucí práce}: PhDr. Petra Fiľová}\\
-    \\
-    {\Large \today \hfill \textbf{Autor práce}: Bc. Daniel Dušek}~~~~~~~~\\
+\newgeometry{left=3cm,right=2cm,top=1.5cm}
+    \begin{center}
+        \Huge
+        \universityName \\
+            \vspace{\stretch{0.150}}
+        
+        \LARGE
+        \textsc{\facultyName\\}
+            \vspace{\stretch{0.300}}
+        
+        \Large{Závěrečná práce doplňujícího pedagogického studia \\ ~ \\}
+        
+        \LARGE
+        \textsc{\thesisName}
+            \vspace{\stretch{0.618}}
+    \end{center}
+
+        % Author and date part        
+        \noindent \textbox{\today}  \textbox{\hfill \textbf{Vedoucí práce}: PhDr. Petra Fiľová} \\
+        \noindent \textbox{\hfill}  \textbox{\hfill \textbf{Autor práce}: Bc. Daniel Dušek ~~~~~}
+\clearpage
+\restoregeometry
 
 
 % WORK TODO LIST
