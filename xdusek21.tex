@@ -30,7 +30,7 @@
 }
 
 % Thesis variables
-\newcommand{\thesisName}{Implementace informační bezpečnosti do ŠVP pro Informatiku a výpočetní techniku na gymnáziích}
+\newcommand{\thesisName}{Implementace kybernetické bezpečnosti do ŠVP pro Informatiku a výpočetní techniku na gymnáziích}
 \newcommand{\universityName}{VYSOKÉ~~~UČENÍ~~~TECHNICKÉ~~~V~BRNĚ}
 \newcommand{\facultyName}{Fakulta elektrotechniky a komunikačních technologií}
 \title{\thesisname}
@@ -51,7 +51,7 @@
 
 % === FRONT PAGE ===
 \thispagestyle{empty}
-\newgeometry{left=3cm,right=2cm,top=1.5cm}
+\newgeometry{left=2cm,right=2cm,top=1.5cm}
     \begin{center}
         \Huge
         \universityName \\
@@ -91,9 +91,9 @@ Trend zneužívání technologií a nedostatečné vzdělanosti v oblasti počí
 
 Na jednu stranu možná i uklidňujícím faktem je, že v případě ransomware jsou cílem typicky organizace, nikoliv jednotlivci. Bohužel i v tomto případě se často obětí stane právě i jednotlivec, a to zejména díky způsobu, kterým se ransomware a jemu podobné škodlivé programy šíří. Jedním z častých scénářů je případ, kdy je počítač infikován prostřednictvím nakaženého souboru typu .xls(x), .doc(x), .ppt(x) apod., tedy soubory běžně produkované nástroji sady Microsoft Office. Druhým, opět velmi častým scénářem je pak případ, kdy se škodlivý soubor pouze tváří být souborem dříve jmenovaných typů, avšak ve skutečnosti je souborem úplně jiného typu, obsahujícího škodlivý kód. V obou dvou scénářích je klíčové, aby ovšem pochybil lidský článek pracující s takovýmto souborem. Tomuto pochybení by bylo poměrně snadné předcházet, a to vyšším obecným povědomím o tom jak správně a bezpečně pracovat s počítačem a internetem. 
 
-Tohoto obecně vyššího povědomí by bylo možné dosáhnout například kladením vyššího důrazu na výuku informační bezpečnosti ve školách v rámci výuky informačních technologií, výpočetní techniky a informatiky. V konkrétních termínech například místo kladení obrovského důrazu pouze na výuku práce s nástroji kancelářského balíku Microsoft Office slevit lehce z časové dotace vyhrazené na vysvětlování funkcionality a následné zkoušení žáků z ní, a tuto časovou úsporu věnovat k osvětlování způsobů a principů, kterými jsou soubory balíku Microsoft Office zneužívány hackery pro napadení počítačů a způsobů obrany a bezpečné práce s těmito soubory. Snížení časové dotace na vysvětlování a zkoušení funkcionality by, dle autora této práce, nemuselo mít vyloženě negativní dopad, neboť většina dnešní generace přichází do styku s počítači a těmito programy na denní bázi. Navíc jsou tyto programy v posledních letech průběžně neustále vylepšovány z hlediska uživatelské přívětivosti, aby práce s nimi byla více intuitivní a snadná. 
+Tohoto obecně vyššího povědomí by bylo možné dosáhnout například kladením vyššího důrazu na výuku kybernetické bezpečnosti ve školách v rámci výuky informačních technologií, výpočetní techniky a informatiky. V konkrétních termínech například místo kladení obrovského důrazu pouze na výuku práce s nástroji kancelářského balíku Microsoft Office slevit lehce z časové dotace vyhrazené na vysvětlování funkcionality a následné zkoušení žáků z ní, a tuto časovou úsporu věnovat k osvětlování způsobů a principů, kterými jsou soubory balíku Microsoft Office zneužívány hackery pro napadení počítačů a způsobů obrany a bezpečné práce s těmito soubory. Snížení časové dotace na vysvětlování a zkoušení funkcionality by, dle autora této práce, nemuselo mít vyloženě negativní dopad, neboť většina dnešní generace přichází do styku s počítači a těmito programy na denní bázi. Navíc jsou tyto programy v posledních letech průběžně neustále vylepšovány z hlediska uživatelské přívětivosti, aby práce s nimi byla více intuitivní a snadná. 
 
-Dalším důvodem pro zavedení výuky informační bezpečnosti do osnov je zcela opačný pól informační bezpečnosti. Doposud bylo psáno hlavně o způsobech ochrany a osvěty běžných uživatelů výpočetní techniky proti útokům ze strany hackerů. Stejně, ne-li více důležitou částí výuky informační bezpečnosti by měla být osvěta žáků o možných následcích zneužívání výpočetní techniky k páchání trestných činů. Mezi studenty se vyskytuje dnes již poměrně veliká část žáků, která je seznámena s prací s počítačem natolik, že je potenciálně schopná počítač i nějakým způsobem programovat. Někteří z těchto žáků mohou potřebovat vyjasnit fakt, že existuje hranice, za níž nesmí při programování svých aplikací zajít. Ačkoliv se to může zdát z prvního pohledu jako celkem jednoduchá otázka k diskusi, nemusí to vždy být pravda. Konkrétním případem může být 16 letý chlapec Ashkan Hosseini, jenž naprogramoval aplikaci, kterou nahrál na CD s rodinnými fotkami~\cite{malwareUnicornAppretince}. Aplikace následně způsobila, že po strčení CD do počítače došlo k vymazání všech rodinných fotek jak z CD, tak z počítače, do kterého bylo CD zastrčeno. Ashkan naprogramoval tuto aplikaci za účelem odstranění fotek na kterých se nacházel -- jeho úmysly tedy nebyly vyloženě špatné a díky tomu, že CD putovalo pouze mezi rodinou, Ashkan nebyl nikým žalován. Pokud by se ale stalo, že by jeho aplikace unikla do světa a napadla cizí počítač, dopustil by se již vážného trestného činu, aniž by si tyto následky svých akcí uvědomil. V Americe by to pro něho pak mohlo znamenat až 5 let vězení. Příběh Ashkana Hosseiniho dopadl tedy naštěstí pro něho dobře, kde navíc jeho rodiče měli dostatek reflexe a nabídli mu možnost studovat oblast boje proti kybernetické kriminalitě, které se chopil. Ne všichni žáci však musí vždy přesně odlišit hranici toho, kdy končí \uv{legrace} a začíná páchání trestného činu, alespoň ne v oblasti počítačů a sítí, a ne všichni musí mít to štěstí, jaké Ashkan měl. I z tohoto důvodu je třeba šířit povědomí o informační bezpečnosti a implikacích, které může mít na život jedince nedodržování jejích zásad. 
+Dalším důvodem pro zavedení výuky kybernetické bezpečnosti do osnov je zcela opačný pól kybernetické bezpečnosti. Doposud bylo psáno hlavně o způsobech ochrany a osvěty běžných uživatelů výpočetní techniky proti útokům ze strany hackerů. Stejně, ne-li více důležitou částí výuky kybernetické bezpečnosti by měla být osvěta žáků o možných následcích zneužívání výpočetní techniky k páchání trestných činů. Mezi studenty se vyskytuje dnes již poměrně veliká část žáků, která je seznámena s prací s počítačem natolik, že je potenciálně schopná počítač i nějakým způsobem programovat. Někteří z těchto žáků mohou potřebovat vyjasnit fakt, že existuje hranice, za níž nesmí při programování svých aplikací zajít. Ačkoliv se to může zdát z prvního pohledu jako celkem jednoduchá otázka k diskusi, nemusí to vždy být pravda. Konkrétním případem může být 16 letý chlapec Ashkan Hosseini, jenž naprogramoval aplikaci, kterou nahrál na CD s rodinnými fotkami~\cite{malwareUnicornAppretince}. Aplikace následně způsobila, že po strčení CD do počítače došlo k vymazání všech rodinných fotek jak z CD, tak z počítače, do kterého bylo CD zastrčeno. Ashkan naprogramoval tuto aplikaci za účelem odstranění fotek na kterých se nacházel -- jeho úmysly tedy nebyly vyloženě špatné a díky tomu, že CD putovalo pouze mezi rodinou, Ashkan nebyl nikým žalován. Pokud by se ale stalo, že by jeho aplikace unikla do světa a napadla cizí počítač, dopustil by se již vážného trestného činu, aniž by si tyto následky svých akcí uvědomil. V Americe by to pro něho pak mohlo znamenat až 5 let vězení. Příběh Ashkana Hosseiniho dopadl tedy naštěstí pro něho dobře, kde navíc jeho rodiče měli dostatek reflexe a nabídli mu možnost studovat oblast boje proti kybernetické kriminalitě, které se chopil. Ne všichni žáci však musí vždy přesně odlišit hranici toho, kdy končí \uv{legrace} a začíná páchání trestného činu, alespoň ne v oblasti počítačů a sítí, a ne všichni musí mít to štěstí, jaké Ashkan měl. I z tohoto důvodu je třeba šířit povědomí o kybernetické bezpečnosti a implikacích, které může mít na život jedince nedodržování jejích zásad. 
 
 V letech 2007--2009 byla reakcí českého školství na prudký rozvoj a expanzi výpočetní techniky snaha naučit žáky a studenty s těmito novými technologiemi pracovat a interagovat. Tato snaha byla realizována v rámci vlnově vydávaných rámcově vzdělávacích programů -- dále jen RVP -- v nichž byl již povinně vyhrazen prostor pro výuku informačních a komunikačních technologií a informatiky~\cite{waveRVP}. Autor této práce považuje tuto reakci za dobře načasovanou a vhodnou. 
 
@@ -103,7 +103,7 @@ Nyní však nastává nová éra, kdy zařízení schopná připojení k Interne
 % TODO: Zkontrolovat, že všechna problematická slova se vyskytují ve slovníčku pojmů.
 \newpage
 \section{Slovníček pojmů}
-V textu této práce je možné se setkat s pojmy, které mají speciální význam v oblasti počítačové či informační bezpečnosti, jenž se často liší od pocitového významu, který by si oblasti neznalý čtenář mohl vytvořit. Tato sekce si klade za cíl rozptýlit možné nejasnosti a mnohoznačnosti.
+V textu této práce je možné se setkat s pojmy, které mají speciální význam v oblasti počítačové či kybernetické bezpečnosti, jenž se často liší od pocitového významu, který by si oblasti neznalý čtenář mohl vytvořit. Tato sekce si klade za cíl rozptýlit možné nejasnosti a mnohoznačnosti.
 
 \textbf{Malware} -- Souhrné označení pro programy které vykonávají škodlivou činnost (trojské koně, viry, programy špehující uživatele, programy zobrazující uživateli nevyžádanou reklamu, a další).
 
@@ -118,15 +118,50 @@ V textu této práce je možné se setkat s pojmy, které mají speciální výz
 % Doslova z papíru: Kap. RVP, ŠVP konkrétní školy - Informace - počet hodin / týden, Skoro kopie RVP/ŠVP s rozborem
 \newpage
 \section{Výuka informatiky dle Rámcového Vzdělávacího Programu a Školního Vzdělávacího Programu}
-Tato část práce se zabývá prostorem vyhrazeným pro výuku informatiky v rámci Rámcového Vzdělávacího Programu (dále jen RVP) a jeho možnou utilizací pro výuku informační bezpečnosti. Dále je zde rozebrán konkrétní Školní Vzdělávací Program (dále jen ŠVP) v rámci něhož je vyhrazen prostor pro výuku informatiky. Jsou zde také zmíněny očekávané výstupní dovednosti, kterými by student po absolvování vyučování informatiky měl disponovat.
+Tato část práce se zabývá prostorem vyhrazeným pro výuku informatiky v rámci Rámcového Vzdělávacího Programu (dále jen RVP) a jeho možnou utilizací pro výuku kybernetické bezpečnosti. Dále je zde rozebrán konkrétní Školní Vzdělávací Program (dále jen ŠVP) v rámci něhož je vyhrazen prostor pro výuku informatiky. Jsou zde také zmíněny očekávané výstupní dovednosti, kterými by student po absolvování vyučování informatiky měl disponovat.
 %Bez dalších poznámek, pravděpodobně půjde o rozbor toho co mi bude k dispozici (pokud nezískám ŠVP, asi se pustím do počtu hodin z RVP a zkusím vygooglit ŠVP nějaké školy, co to má veřejně). Patří sem informace o ŠVP/RVP, počet hodin na týden.
 
 % === PREREQUISITIES ===
 \newpage
+% TODO: Ocitovat RVP pro gymnázia & RVP pro základní školy
 % TODO: Přijít na to jak správně pojmenovat kapitolu "Vstupní dovednosti"
+% Očekávané výstupy – 1. a 2. období (základní vzdělávání)
+% žák
+% ICT-5-1-01 využívá základní standardní funkce počítače a jeho nejběžnější periferie
+% ICT-5-1-02 respektuje pravidla bezpečné práce s hardwarem i softwarem a postupuje
+%   poučeně v případě jejich závady
+% ICT-5-1-03 chrání data před poškozením, ztrátou a zneužitím
 \section{Vstupní dovednosti}
-V této části práce jsou vymezeny vstupní dovednosti, kterými by studenti pro úspěšnou výuku informační bezpečnosti měli disponovat.
-%Bodově z konzultace: předpokládané vstupní dovednosti, ve kterých ročnících by se to mělo vyučovat (předběžně domluveno na všechny), probrat možné formy výuky (výklad, exkurze, protip: přivedení člověka odsouzeného za trestnou činnost (část s vysvětlováním právní závadnosti)), formy výuky (co to vůbec je? :D), potřebné pomůcky pro realizaci: jak výkonné musí být počítače, jaké by měly být jejich parametry (asi internet je třeba), jde využít telefony (jak?), interaktivní tabule
+V této části práce jsou vymezeny vstupní dovednosti, kterými by studenti pro úspěšnou výuku kybernetické bezpečnosti měli disponovat. Dále je zde navrženo a argumentováno časové zasazení výuky napříč ročníky, pokryty jsou také možné formy výuky vhodné pro předmět kybernetické bezpečnosti a nezbytné pomůcky pro kvalitní výuku.
+% Osnova
+% * Vstupní dovednosti
+% * Pomůcky pro výuku 
+% * Časový rozvrh napříč ročníky
+% * Formy výuky 
+%           Bodově z konzultace: předpokládané vstupní dovednosti, ve kterých ročnících by se to mělo vyučovat (předběžně domluveno na všechny), probrat možné formy výuky (výklad, exkurze, protip: přivedení člověka odsouzeného za trestnou 
+%           činnost (část s vysvětlováním právní závadnosti)), potřebné pomůcky pro realizaci: jak výkonné musí být počítače, jaké by měly být jejich parametry (asi internet je třeba), jde využít telefony (jak?), interaktivní tabule
+
+\subsection{Vstupní dovednosti}
+Text vstupních dovedností.
+
+\subsection{Pomůcky pro výuku}
+Test pomůcek ve výuce.
+
+\subsection{Časový rozvrh napříč ročníky}
+Text časového rozvrhu napříč ročníky
+
+\subsection{Formy výuky}
+Způsobů a forem, kterými lze vyučovat a demonstrovat kybernetickou bezpečnost by se jistě dalo vymyslet mnoho. Zde jsou shrnuty formy výuky, které autor práce považuje za efektivní a vhodné v oblasti kybernetické bezpečnosti, společně s argumentací využití právě těchto forem.
+
+\subsubsection{Forma výuky: Výklad s živou ukázkou}
+Text formy výuky.
+
+\subsubsection{Forma výuky: Praktický domácí úkol, studenti kooperují}
+Text formy výuky.
+
+\subsubsection{Forma výuky: Návštěva člověka z praxe}
+Text formy výuky.
+
 
 
 % ========= PRACTICAL PART =========
