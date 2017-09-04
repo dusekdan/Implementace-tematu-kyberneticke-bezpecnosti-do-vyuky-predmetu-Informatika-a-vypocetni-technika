@@ -8,10 +8,12 @@
 \usepackage[IL2]{fontenc}
 \usepackage{afterpage}
 \usepackage{amsthm}
+\usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{fancyvrb}
 \usepackage{hyperref}
+\usepackage{pdfpages}
 \hypersetup{
     colorlinks,
     citecolor=black,
@@ -250,27 +252,36 @@ Příprava na hodinu s tématem \textbf{Nebezpečí skryté v dokumentech Micros
     \end{itemize}
 
 \subsubsection{Specifikace tématu hodiny}
-Hodina je zaměřená na -- v době psaní práce -- velmi aktuální a časté nebezpečí, a to škodlivý kód skrytý v souborech produkovaných nástroji kancelářské sady Microsoft Office. V hodině je probráno z principielního hlediska, jak ke skrytí kódu do dokumentů dochází a z jakého důvodu nemusí ani velmi kvalitní antivirové programy detekovat tento typ škodlivého kódu dříve, než je pozdě. Je zahrnuto vysvětlení významu \uv{makro} v kontextu dokumentů Microsoft Office,   Dále je v hodině vysvětleno jakým způsobem je možné se bránit, proti napadení počítače tímto způsobem, a jaké další bezpečnostní opatření je vhodné přijmout před otevřením dokumentu získaného z internetu. Hodina také nabízí vhodný prostor k zopakování poznatků z hodiny na téma \textit{Krádeže identity} -- vyučující zde může, ve snaze navést žáky k vymyšlení již probraného bezpečnostního opatření připomenout algoritmus pro bezpečné otevírání a práci s emaily (probraný právě v hodině \textit{Krádeže identity}). Studenti jsou v hodině také seznámení se všemi známými koncovkami souborů produkovaných nástrojmi sady Microsoft Office, které mohou ukrývat spustitelná makra. 
+Hodina je zaměřená na -- v době psaní práce -- velmi aktuální a časté nebezpečí, a to škodlivý kód skrytý v souborech produkovaných nástroji kancelářské sady Microsoft Office. V hodině je probráno z principielního hlediska jak ke skrytí kódu do dokumentů dochází a z jakého důvodu nemusí ani velmi kvalitní antivirové programy detekovat tento typ škodlivého kódu dříve, než je pozdě. Je zahrnuto vysvětlení významu \uv{makro} v kontextu dokumentů Microsoft Office. Dále je v hodině vysvětleno jakým způsobem je možné se bránit proti napadení počítače tímto způsobem, a jaké další bezpečnostní opatření je vhodné přijmout před otevřením dokumentu získaného z internetu. Hodina také nabízí vhodný prostor k zopakování poznatků z hodiny na téma \textit{Krádeže identity} -- vyučující zde může, ve snaze navést žáky k vymyšlení již probraného bezpečnostního opatření připomenout algoritmus pro bezpečné otevírání a práci s emaily (probraný právě v hodině \textit{Krádeže identity}). Studenti jsou v hodině také seznámeni se všemi známými koncovkami souborů produkovaných nástrojmi sady Microsoft Office, které mohou ukrývat spustitelná makra. 
 
 \subsubsection{Stanovené cíle}
-Student rozumí tomu, co je to makro, v kontextu dokumentů produkovaných nástroji kancelářské sady Microsoft Office. Student si uvědomuje rizika, která může přinášet bezhlavé otevírání těchto dokumentů. Student zná obecně známé koncovky dokumentů Microsoft Office. Student rozumí principům útoku na počítač skrze spuštění maker v dokumentu a je schopen mu zabránit příslušnými bezpečnostními opatřeními. Student rozumí možným nastavením úrovně bezpečnosti v programech sady Microsoft Office. Student umí vysvětlit pojem \uv{obfuskace} a k čemu slouží. Student zná název programovacího jazyka, ve kterém jsou makra pro programy Microsoft Office typicky psána, je schopen velmi jednoduché, ukázkové makro naprogramovat. 
+Student rozumí tomu, co je to makro -- v kontextu dokumentů produkovaných nástroji kancelářské sady Microsoft Office. Student si uvědomuje rizika, která může přinášet bezhlavé otevírání těchto dokumentů. Student zná obecně známé koncovky dokumentů Microsoft Office. Student rozumí principům útoku na počítač skrze spuštění maker v dokumentu a je schopen mu zabránit příslušnými bezpečnostními opatřeními. Student rozumí možným nastavením úrovně bezpečnosti v programech sady Microsoft Office. Student umí vysvětlit pojem \uv{obfuskace} a k čemu slouží. Student zná název programovacího jazyka, ve kterém jsou makra pro programy Microsoft Office typicky psána, je schopen velmi jednoduché, ukázkové makro naprogramovat. 
 
 \subsubsection{Diskuse o souvislostech se studenty}
-Hodina by měla být řazena tak, že je probírána až po tom, co studenti v informatice probrali práci s nástroji kancelářské sady Microsoft Office. Vyučující tedy může využít již existujících znalostních základů studentů a diskutovat s nim na začátku hodiny o tématických souvislostech mezi tím, co se již naučili a znalostmi, které si studenti mají z hodiny odnést. Vyučující může například vznést otázku: \uv{Jaké koncovky mohou mít soubory vyprodukované nástroji sady MS Office?}. Studenti následně mohou přicházet se svými nápady, které koncovky dokumenty mohou mít. Vyučující na základě toho může vypozorovat, kteří ze studentu mají větší znalost sady MS Office a případně se jich pak dotazovat na další aspekty nově probírané látky. 
+Hodina by měla být řazena tak, že je probírána až po tom, co studenti v informatice probrali práci s nástroji kancelářské sady Microsoft Office. Vyučující tedy může využít již existujících znalostních základů studentů a diskutovat s nimi na začátku hodiny o tématických souvislostech mezi tím, co se již naučili a znalostmi, které si studenti mají z hodiny odnést. 
+
+Vyučující může například vznést otázku: \uv{Jaké koncovky mohou mít soubory vyprodukované nástroji sady MS Office?}. Studenti následně mohou přicházet se svými nápady, které koncovky dokumenty mohou mít. Vyučující na základě toho může vypozorovat, kteří ze studentu mají větší znalost sady MS Office a případně se jich pak dotazovat na další aspekty nově probírané látky. 
 
 Během této diskuse vyučující společně se studenty prodiskutuje, jaká je motivace útočníků skrývat nebezpečný kód do dokumentových souborů. Výsledkem diskuse na toto téma by mělo být uvědomění studentů, že hlavní motivací proč skrývat škodlivý kód do dokumentů je jejich vysoká rozšířenost a používanost i velmi netechnickými typy uživatelů. Dokumenty navíc tuto možnost skrývání nebezpečné funkcionality přímo podporují, což je dělá pro útočníky perfektním nástrojem k zneužití.
 
 \subsubsection{Náplň hodiny a časový plán}
-\indent\textbf{0.--3. minuta} - Zápis do třídní knihy, v případě, že výuka probíhá v počítačové učebně, zapnutí počítačů a přihlášení žáků do systému.
+\indent\textbf{0.--3. minuta} - Zápis do třídní knihy. V případě, že výuka probíhá v počítačové učebně, zapnutí počítačů a přihlášení žáků do systému.
 
-\textbf{4.--10. minuta} - Představení tématu a diskuse popsaná v části \textbf{Diskuse o souvislostech se studenty}.
+\textbf{4.--10. minuta} - Představení tématu a diskuse popsaná v části \textbf{Diskuse o souvislostech se studenty}. Od studentů se očekává, že si nové termíny zapíšou do sešitu, popřípadě dokumentu, který používají k psaní elektronických zápisů z hodiny, s vlastním vysvětlením. Toto očekávání je studentům sděleno v tomto čase.
 
-\textbf{11.--25. minuta}
+\textbf{11.--25. minuta} - Frontální forma výkladu kombinovaná s monologickým výkladem využita k vysvětlení základních pojmů hodiny - vysvětlení pojmu \uv{makro} a jeho souvislosti s Microsoft Office, společně s osvětlením významu slova \uv{makro} pak vysvětlení princpu jeho funkce a pokus o zjištění dotazováním třídy, proč jsou tedy makra tak nebezpečná. Není-li výsledkem dotazování taková odpověď jakou si vyučující představoval (např. to, že díky tomu, že makro je v podstatě kód v programovacím jazyce, ve kterém lze naprogramovat cokoliv (pokud je třída dostatečně pokročilá, volitelné představení dalšího pojmu \uv{výpočetně úplný}, či \uv{turingovsky kompletní})), vysvětlí studentům vyučující jakou odpověď hledal a proč. V moment kdy je osvětlován princip funkce maker je zaveden nový pojem - \textit{Visual Basic} - programovací jazyk užívaný k tvorbě maker.
+
+\textbf{26.--35. minuta} - Demonstrace jednoduchého funkčního a nebezpečného makra, na konkrétním příkladu - kód stažený ze vzdáleného serveru vykonaný pod aktuálním uživatelem přihlášeném na počítači. Na tomto příkladě vyučující studentům vysvětlí, že právě tohle je důvod, proč i kvalitní antivirové řešení mohou mít s detekcí tohoto škodlivého programu problém. Dále je názorně ukázán rozdíl mezi makrem které je \uv{obfuskované} a které je neobfuskované a zmíněno, že \uv{obfuskace} se využívá k skrytí kódu maker před uživateli, ale i antiviry. Ukázka jednoduchého, ale bezpečného makra a popuzení studentů, aby ho replikovali a spustili na svých počítačích.
+
+\textbf{36.--45. minuta} - Uzavření látky a vysvětlení, jak správně nastavit Microsoft Office, aby bylo předejito automatickému spouštění maker. Při této příležitosti jsou žákům také vysvětleny jednotlivé úrovně nastavení bezpečnosti v Microsoft Office, a které z nich jsou bezpečné. Zbyde-li z kterékoliv části hodiny čas, v závěrečné části je také vhodný prostor k demonstraci existujících způsobů, kterými se útočníci pokouší lidi přimět k spouštění nebezpečných souborů. 
 
 \subsubsection{Nutné pomůcky pro hodinu}
 Pro splnění cílů hodiny a pohodlnou demonstraci probíraného učiva je potřeba, aby v místnosti, kde probíhá výuka byl přítomen počítač s operačním systémem \textit{Microsoft Windows}, s nainstalovanými programy kancelářské sady \textit{Microsoft Office}. Tento počítač by měl být napojen na dataprojektor, který promítá obraz tak, aby ho třída viděla v reálném čase. Vyučující si dále připraví soubor typu \texttt{docx}, do kterého ukryje \uv{obfuskované} makro, které spustí příkazovou řádku a vypíše do ní text. Připojení k Internetu je pro tuto vyučovací hodinu volitelné, avšak příhodné, neb je-li počítač připojen k Internetu, je možné demonstrovat pokročilé techniky, kterými se virus skrývá před detekcí anti-virovými programy.
 
+\newpage
 \subsubsection{Text snímků prezentace}
+% TODO: Až to bude hotové, tak ilovepdf.com, rozdělit po snímcích, vložit vícekrát
+\includegraphics{IdentityTheftSlides/xdusek21-IdentityTheft.pdf}
 
 
 
