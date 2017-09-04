@@ -18,4 +18,7 @@ commit:
 
 todo:
 	$(call get_todo_items)
-	
+
+presentation:
+	pdflatex xdusek21-IdentityTheft.tex
+	rm xdusek21-IdentityTheft.aux xdusek21-IdentityTheft.log
