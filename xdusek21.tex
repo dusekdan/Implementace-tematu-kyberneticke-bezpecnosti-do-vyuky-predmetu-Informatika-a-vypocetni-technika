@@ -39,11 +39,11 @@
 \author{Bc. Daniel Dušek}
 
 % === WORK TODO LIST ===
-% 
-%
 %
 % PRAKTICKÁ ČÁST - TÉMATA, OSNOVY
-% Topic: ECDL - Makra
+% Hodina 3: Bezpečnost na Internetu (mohla by být řazena jako druhá, za Identitu)
+% Hodina 4:  
+%
 % Source from mail: ICT zavedena v rámci nějaké konkrétní vllnovité implementace
 
 
@@ -112,6 +112,8 @@ V textu této práce je možné se setkat s pojmy, které mají speciální výz
 \textbf{Nakažený soubor} -- Soubor v němž je kromě původního obsahu souboru navíc obsažen škodlivý kód. Škodlivý kód do souboru umístil buď přímo, nebo zprostředkovaně (například prostřednictvím škodlivého programu) útočník.
 
 \textbf{Ransomware} -- Škodlivý program založený na principu držení rukojmí. Program po průniku do počítače zašifruje některé soubory, popřípadě uživateli úplně znemožní práci s počítačem. Za zpřístupnění souborů či zařízení je po uživateli požadováno zaplacení výkupného. Zaplacení výkupného nemusí vždy vést k získání objektu, který je držen jako rukojmí.
+
+\textbf{Phishing} -- Typ útoku při kterém útočník předstírá, že je důvěryhodná, uživateli dobře známá entita, aby uživatele přiměl k vydání osobních či jinak citlivých informací a dat.
 
 
 % === RVP & SVP CHAPTER ===
@@ -216,10 +218,6 @@ Struktura rozložení přípravy na hodinu vychází z doporučené obecné stru
 \subsubsection{Specifikace tématu hodiny}
 Hodina se zabývá tématem krádeže identity na Internetu, riziky situací, kdy se člověk stane obětí krádeže identity (aktivní či pasivní oběť) a nejčastějšími typy identit, které jsou odcizovány, nebo jsou podvrhnutelné. V hodině by také měl být popsán a demonstrován způsob, kterým ke zcizení identity může dojít, včetně uvedení možných právních následků takové činnosti.
 
-% Stará verze stanovených cílů.
-%\subsubsection{Stanové cíle}
-%Studenti by po hodině měli rozumět pojmu \textit{krádež identity} a měli by chápat rizika spojená s touto hrozbou. Budou znát kanály, kterými ke krádeži identity může dojít a budou chápat, že jde o na Internetu o velmi běžnou záležitost. Dále by měli být znát právní následky, kterým mohou čelit v případě že se dopustí krádeže identity, a co vše je možné považovat za krádež identity. V hodině dojde k demonstraci jak snadné je podvrhnout email z téměř jakékoliv emailové schránky, žáci by měli být schopni podvržení emailu zopakovat. Zároveň budou žáci schopní u jakéhokoliv emailu, který dorazí do jejich emailové schránky rozhodnout na základě probraného algoritmu, zda je bezpečné email otevřít, či zda je lepší ho smazat. Existují-li ve třídě žáci, kteří se věnují informatice, nebo mají větší zájem o problematiku efektivní obrany proti podvržení emailové identity, budou jim poskytnuty doplňující zdroje informací, řešící problém.
-
 \subsubsection{Stanovené cíle}
 Student rozumí pojmu \textit{krádež identity} a chápe rizika spojená s touto hrozbou. Student zná kanály, kterými ke krádeži identity může dojít a chápe, že na Internetu jde o velmi běžnou záležitost. Dále zná právní následky, kterým může čelit v případě, že se krádeže identity dopustí a uvědomuje si co vše je možné považovat za krádež identity. Dojde-li v hodině k demonstraci podvržení emailu odcházejícího z jakékoliv emailové schránky, student je také schopen toto podvržení reprodukovat. Student si je vědom, že u jakéhokoliv emailu, co se objeví v jeho emailové schránce, hrozí riziko, že nebyl odeslán osobou, která je uvedena jako jeho odesilatel. Student je schopen dle probraného algoritmu rozhodnout, zda je bezpečné email otevřít, či zda je lépe ho smazat. Existuje-li student s vyšším zájmem o informatiku, nebo problematiku efektivní obrany proti podvržení emailové identity, jsou mu poskytnuty doplňující zdroje informace řešící tento problém.
 
@@ -246,7 +244,7 @@ Příprava na hodinu s tématem \textbf{Nebezpečí skryté v dokumentech Micros
         \item Specifikace tématu hodiny,
         \item stanovené cíle,
         \item diskuse o souvislostech se studenty,
-        \item náplň hodiny hodiny a časový plán,
+        \item náplň hodiny a časový plán,
         \item nutné pomůcky pro hodinu
         \item text snímků prezentace.
     \end{itemize}
@@ -290,10 +288,19 @@ Příprava na hodinu s tématem \textbf{Obecná bezpečnost na Internetu} je roz
         \setlength{\itemsep}{-3pt}
         \item Specifikace tématu hodiny,
         \item stanovené cíle,
-        \item náplň hodiny hodiny a časový plán,
+        \item náplň hodiny a časový plán,
         \item nutné pomůcky pro hodinu
         \item text snímků prezentace.
 \end{itemize}
+
+\subsubsection{Specifikace tématu hodiny}
+Tato hodina se zabývá aspekty obecné bezpečnosti z hlediska základního uživatelského používání internetového prohlížeče a interakce s webem jako takovým. Částečně téma této hodiny navazuje na předchozí hodinu zaměřenou na \textbf{Krádeže identity} - tato hodina se blíže zaměří na speciální případ krádeže identity, a to případ, kdy podvratná stránka napodobuje svým vzhledem vzhled stránky, kterou uživatel zná a věří ji. Tomuto specializované případu se taktéž říká \textit{Phishing}.
+
+\subsubsection{Stanovené cíle}
+Student zná a rozumím pojmům \textit{phishing}, \textit{vývojářská konzole} či jen \textit{konzole}, \textit{zdrojový kód}, \textit{http} a \textit{https}. Student umí rozlišit mezi bezpečnou webovou stránkou a stránkou, která se za bezpečnou webovou stránku pouze vydává. Student dovede posoudit, zda je přípustné do konkrétní webové stránky vyplňovat jakékoliv osobní informace. Žák zná a umí vysvětlit problémy z hlediska bezpečnosti, které nastávají při využívání stránek bez podpory HTTPS (tedy stránek, které pro přenos informací mezi uživatelem a serverem využívají HTTP). Žák ví k čemu slouží v prohlížečí tzv. \textit{vývojářká konzole} a uvědomuje si, rizika, které neuvážené kopírování a vkládání textu do ní může přinášet.
+
+\subsubsection{Náplň hodiny a časový plán}
+
 
 \subsection{Příprava 4 -- }
 Text přípravy na hodinu.
