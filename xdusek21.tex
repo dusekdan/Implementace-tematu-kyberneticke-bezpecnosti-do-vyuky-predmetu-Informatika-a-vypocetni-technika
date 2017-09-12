@@ -32,7 +32,8 @@
 }
 
 % Thesis variables
-\newcommand{\thesisName}{Implementace kybernetické bezpečnosti do ŠVP pro Informatiku a výpočetní techniku na gymnáziích}
+%\newcommand{\thesisName}{Implementace kybernetické bezpečnosti do ŠVP pro Informatiku a výpočetní techniku na gymnáziích}
+\newcommand{\thesisName}{Implementace tématu kybernetické bezpečnosti do výuky předmětu Informatika a Výpočetní Technika pro gymnázia}
 \newcommand{\universityName}{VYSOKÉ~~~UČENÍ~~~TECHNICKÉ~~~V~BRNĚ}
 \newcommand{\facultyName}{Fakulta elektrotechniky a komunikačních technologií}
 \title{\thesisname}
@@ -121,7 +122,7 @@ V textu této práce je možné se setkat s pojmy, které mají speciální výz
 \newpage
 \section{Výuka informatiky dle rámcového vzdělávacího programu a školního vzdělávacího programu}
 Tato část práce se zabývá prostorem vyhrazeným pro výuku informatiky v rámci \textit{rámcového vzdělávacího programu} (dále jen RVP) a jeho možnou utilizací pro výuku kybernetické bezpečnosti. Dále je zde rozebrán konkrétní \textit{školní vzdělávací program} (dále jen ŠVP) v rámci něhož je vyhrazen prostor pro výuku informatiky. Dále v této kapitole je návrh rozšíření ŠVP tak, aby poskytoval dostatečný prostor k výuce kybernetické bezpečnosti. Jsou zde také zmíněny očekávané výstupní dovednosti, kterými by student po absolvování vyučování kybernetické bezpečnosti měl disponovat.
-%Bez dalších poznámek, pravděpodobně půjde o rozbor toho co mi bude k dispozici (pokud nezískám ŠVP, asi se pustím do počtu hodin z RVP a zkusím vygooglit ŠVP nějaké školy, co to má veřejně). Patří sem informace o ŠVP/RVP, počet hodin na týden.
+% Bez dalších poznámek, pravděpodobně půjde o rozbor toho co mi bude k dispozici (pokud nezískám ŠVP, asi se pustím do počtu hodin z RVP a zkusím vygooglit ŠVP nějaké školy, co to má veřejně). Patří sem informace o ŠVP/RVP, počet hodin na týden.
 
 \subsection{Očekávané výstupy a cíle vzdělávání}
 RVP pro gymnázia z roku 2007 uvádí následující cílové zaměření vzdělávací oblasti Informatiky a Informačních a komunikačních technologií~\cite{rvpGym}, která vedou žáka k:
@@ -148,9 +149,23 @@ znalostní společnosti;
     \item \textbf{poznání základních právních aspektů a etických zásad týkajících se práce s informacemi a výpočetní technikou, k respektování duševního vlastnictví, copyrightu, osobních dat a zásad správného citování autorských děl}.
 \end{itemize}
 
-Výše zmíněné, zvýrazněné body jsou místa, které se více či méně dotýkají kybernetické bezpečnosti, a v rámci jejichž tématických záběrů je navrhována a implementována výuka kybernetické bezpečnosti v rámci výuky Informatiky a ICT na gymnáziích.
+Výše zmíněné, zvýrazněné body jsou místa, které se více či méně dotýkají kybernetické bezpečnosti, a v rámci jejichž tématických záběrů je v této práci navrhována a implementována výuka kybernetické bezpečnosti v rámci výuky Informatiky a ICT na gymnáziích.
+ 
+První ze tří zvýrazněných odstavců poskytuje prostor pro témata soustředící se na osvětu studentů v oblasti aktuálních hrozeb, které se ve světě kybernetické bezpečnosti vyskytují. Zmiňovaná osvěta má za cíl minimalizovat možný dopad těchto hrozeb na studenty, popřípadě jejich okolí. Konkrétní implementace výuky spadající pod prostor poskytovaný tímto bodem by v době psaní této práce mohla například zahrnovat látku diskutující kanály a způsoby, kterými je šířen \textit{ransomware}, který je velmi aktuální hrozbou, a to i především pro běžné uživatele počítače a Internetu. Dále pak také sadu tzv. \textit{dobrých zvyků}, jejichž aplikací je možné předejít infekci počítače tímto druhem škodlivého programu.
 
-\subsection{Prostor vyhrazený v RVP}
+Druhý ze zvýrazněných odstavců vytváří prostor pro vzdělávání studentů ve správné práci s informačními zdroji. I zde je možné hledat spojitost s kybernetickou bezpečností. Tématicky by se zde daly diskutovat nebezpečí útoků cílených na konkrétní skupinu uživatelů, popřípadě na konkrétního uživatele -- jedince, které jsou založené na dezinformaci subjektu či \uv{prolamování} jednotlivce namísto počítačového systému. V době psaní práce by pod tímto bodem mohlo být vhodné rozvíjet výuku témat jako jsou \textbf{krádeže identity}, \textbf{sociální inženýrství}, či velmi populární \textbf{lživé zprávy} (pozn. v angličtině \textit{Fake news}).
+
+Třetí zvýrazněný odstavec pak pod částí \uv{\textit{poznání základních právních aspektů a etických zásad týkajících se práce s informacemi a výpočetní technikou}} dává prostor pro vysvětlení možných právních následků pro jedince, kteří se rozhodnou zneužít znalost témat počítačové bezpečnosti k vlastnímu profitu na úkor druhých, tedy se postaví za \uv{hranu} zákona. Zahrnout lze i témata týkající se správného postupu při nalezení či získání důvěrné informace třetí strany, správného postupu při hlášení nalezených bezpečnostních chyb v lidských procesech, či aplikacích. Výuka pod tímto bodem by měla nabádat studenty k zodpovědnému chování a přístupu při práci s počítači, a to v souvislosti s kybernetickou bezpečností.
+
+
+\subsection{Prostor vyhrazený v RVP pro gymnázia}
+RVP pro gymnázia z roku 2007 předepisuje pro výuku Informatiky a ICT  minimální rozsah 4 hodiny týdně ve čtyřech letech s volitelným vyučováním v libovolném roce z 4 let. Bývá zvykem, že z hlediska ŠVP je toto realizováno výukou Informatiky a ICT po první dva roky v rozsahu 2 hodiny týdně (\textit{pozn. referenční ŠVP využité v této práci to má takto}). Dále je poskytnuto celkem 26 hodin \textit{disponibilní časové dotace}, ze kterých je možné při implementaci konkrétního ŠVP čerpat a výuku Informatiky a ICT rozšiřovat. Další možností je pak výuka Informatiky a ICT v 3. a 4. ročníku v rámci alokovaného času pro povinné \textit{Volitelné vzdělávací aktivity}, který je vyměřen na 8 hodin.
+
+Autor této práce se domnívá, že vhodný způsob začlenění výuky kybernetické bezpečnosti do výuky by byla realizace samostatného předmětu \textit{Kybernetická bezpečnost} s využitím času vyhrazeného pro \textit{Volitelné vzdělávací aktivity}. Tento předmět by byl vyučován po dobu dvou let ve 3. a 4. ročníku, po tom, co studenti již absolvovali výuku Informatiky a ICT, na kterou by tento předmět navazoval. Umožnění studentům vybrat si \textit{Kybernetickou bezpečnost} jako volitelnou specializaci by teoreticky vedlo k vyučovacím třídám složeným ze studentů se zájmem o předmět bezpečnosti, kteří by se již během studia gymnázia mohli dále rozhodnout, zda chtějí pokračovat v kariéře v této perspektivní oblasti. Složení třídy ze zaujatých studentů by dále mohlo vést k svižnějšímu tempu výuky s větším důrazem na detail probíraného tématu, neb lze očekávat, že studenti se zájmem o kybernetickou bezpečnost zvládají práci s počítačem na dostatečné 
+úrovni, a jsou namotivováni pracovat i mimo vyučovací hodiny.
+
+Současně si je však autor této práce vědom, že momentálně ještě na gymnáziích neexistuje dostatečná potřeba vyučovat předměty týkající se přímo kybernetické bezpečnosti, pravděpodobně z toho důvodu, že kybernetická bezpečnost jako taková ještě není přímo zmiňována v RVP. Proto v rámci této práce je navrhován poněkud střízlivější způsob začlenění výuky kybernetické bezpečnosti do výuky na gymnáziích, a to formou doplňujících hodin ke standardní výuce Informatiky a ICT a zvýšením časové dotace pro její výuku.
+
 
 
 % === PREREQUISITIES ===
@@ -163,7 +178,8 @@ Výše zmíněné, zvýrazněné body jsou místa, které se více či méně do
 % ICT-5-1-02 respektuje pravidla bezpečné práce s hardwarem i softwarem a postupuje
 %   poučeně v případě jejich závady
 % ICT-5-1-03 chrání data před poškozením, ztrátou a zneužitím
-\section{Vstupní dovednosti}
+% Po konzultaci název: Metodika výuky kybernetické bezpečnosti
+\section{Metodika výuky kybernetické bezpečnosti}
 V této části práce jsou vymezeny vstupní dovednosti, kterými by studenti pro úspěšnou výuku kybernetické bezpečnosti měli disponovat. Dále je zde navrženo a argumentováno časové zasazení výuky napříč ročníky, pokryty jsou také možné formy výuky vhodné pro předmět kybernetické bezpečnosti a nezbytné pomůcky pro kvalitní výuku.
 % Osnova
 % * Vstupní dovednosti
