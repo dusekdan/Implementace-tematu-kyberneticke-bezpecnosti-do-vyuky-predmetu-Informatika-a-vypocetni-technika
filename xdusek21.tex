@@ -6,6 +6,7 @@
 \usepackage[utf8x]{inputenc} 
 \usepackage[czech]{babel}
 \usepackage[IL2]{fontenc}
+\usepackage{caption}
 \usepackage{afterpage}
 \usepackage{amsthm}
 \usepackage{graphicx}
@@ -118,13 +119,9 @@ V textu této práce je možné se setkat s pojmy, které mají speciální výz
 
 
 % === RVP & SVP CHAPTER ===
-% Doslova z papíru: Kap. RVP, ŠVP konkrétní školy - Informace - počet hodin / týden, Skoro kopie RVP/ŠVP s rozborem
 \newpage
 \section{Výuka informatiky dle rámcového vzdělávacího programu a školního vzdělávacího programu}
 Tato část práce se zabývá prostorem vyhrazeným pro výuku informatiky v rámci \textit{rámcového vzdělávacího programu} (dále jen RVP) a jeho možnou utilizací pro výuku kybernetické bezpečnosti. Dále je zde rozebrán konkrétní \textit{školní vzdělávací program} (dále jen ŠVP) v rámci něhož je vyhrazen prostor pro výuku informatiky. Dále v této kapitole je návrh rozšíření ŠVP tak, aby poskytoval dostatečný prostor k výuce kybernetické bezpečnosti. 
-% TODO: Mel by jeste nasledujici zakomentovany radek patrit do teto sekce?
-% Jsou zde také zmíněny očekávané výstupní dovednosti, kterými by student po absolvování vyučování kybernetické bezpečnosti měl disponovat.
-% Bez dalších poznámek, pravděpodobně půjde o rozbor toho co mi bude k dispozici (pokud nezískám ŠVP, asi se pustím do počtu hodin z RVP a zkusím vygooglit ŠVP nějaké školy, co to má veřejně). Patří sem informace o ŠVP/RVP, počet hodin na týden.
 
 \subsection{Očekávané výstupy a cíle vzdělávání}
 RVP pro gymnázia z roku 2007 uvádí následující cílové zaměření vzdělávací oblasti Informatiky a Informačních a komunikačních technologií~\cite{rvpGym}, která vedou žáka k:
@@ -168,23 +165,35 @@ Autor této práce se domnívá, že vhodný způsob začlenění výuky kyberne
 
 Současně si je však autor této práce vědom, že momentálně ještě na gymnáziích neexistuje dostatečná potřeba vyučovat předměty týkající se přímo kybernetické bezpečnosti, pravděpodobně z toho důvodu, že kybernetická bezpečnost jako taková ještě není přímo zmiňována v RVP. Proto v rámci této práce je navrhován poněkud střízlivější způsob začlenění výuky kybernetické bezpečnosti do výuky na gymnáziích, a to formou doplňujících hodin ke standardní výuce Informatiky a ICT a zvýšením časové dotace pro její výuku.
 
-\subsection{Rozbor školního vzdělávacího programu Gymnázia Boskovice}
+\subsection{Rozbor konkrétního školního vzdělávacího programu}
+Pro uvedení navrhované výuky kybernetické bezpečnosti do kontextu výuky Informatiky a ICT na gymnáziích se autor této práce rozhodl využít jako referenční případ existující školní vzdělávací program \textit{Gymnázia Boskovice}~\cite{svpGymbos}. Autor této práce prozkoumal více volně dostupných ŠVP pro různá gymnázia a došel k závěru, že v kontextu výuky Informatiky a ICT je Gymnázium Boskovice vhodným zástupcem pro reprezentaci třídy \uv{běžných gymnázií}. Z tohoto důvodu bylo vybráno právě toto ŠVP.
 
+Rozložení hodin výuky v ŠVP je dáno na 2 hodiny týdně v prvních dvou ročnících a 0 hodin týdně pro třetí a čtvrtý ročník. V konkrétním ŠVP je ještě uvedeno dělení, kdy studenti oboru \textit{živé jazyky} mají sníženu dotaci o jednu hodinu týdně během prvních dvou let, avšak tato informace není pro kontext této práce relevantní a je uvažována dotace 2 hodiny týdně. Ve třetím a čtvrtém ročníku si pak studenti mohou ještě volitelně zvolit rozšiřující seminář Informatiky a Výpočetní techniky s dotací 5 hodin. Toto však také není přímo relevantní pro kontext této práce, neb typické gymnázium dotaci v této výši ne vždy uděluje.
+
+Po absolvování výuky Informatiky a ICT na gymnáziu dle zkoumaného ŠVP splňují žáci všechny očekávané výstupy z oblastí daných RVP~\cite{rvpGym}:
+\begin{itemize}
+    \setlength{\itemsep}{-3pt}
+    \item \textbf{Digitální technologie} - ovládá, propojuje a aplikuje dostupné prostředky ICT; využívá teoretické i praktické poznatky a o funkcích jednotlivých složek hardwaru a softwaru k tvůrčímu a efektivnímu řešení úloh; organizuje účelně data a chráni je proti poškození či zneužití; orientuje se v možnostech uplatnění ICT v různých oblastech společenského poznání a praxe.
+    \item \textbf{Zdroje a vyhledávání informací, komunikace} - využívá dostupné služby informačních sítí k vyhledávání informací, ke komunikaci, k vlastnímu vzdělávání a týmové spolupráci; využívá nabídku informačních a vzdělávacích portálů, encyklopedií, knihoven, databází a výukových programů; posuzuje tvůrčím způsobem aktuálnost, relevanci a věrohodnost informačních zdrojů a informací; využívá informační a komunikační služby v souladu s etickými, bezpečnostními a legislativními požadavky.
+    \item \textbf{Zpracování a prezentace informací} - zpracovává a prezentuje výsledky své práce s využitím pokročilých funkcí aplikačního softwaru, multimediálních technologií a internetu; aplikuje algoritmický přístup k řešení problémů.
+\end{itemize}
+
+Při přidání výuky kybernetické do výuky Informatiky a ICT na gymnáziích bude tento seznam rozšířen o další výstupy:
+\begin{itemize}
+    \setlength{\itemsep}{-3pt}
+    \item \textbf{Bezpečnost informačních technologií} - zná a je si vědom nebezpečí vyvstávajících při práci s informačními technologiemi a Internetem; zná a aplikuje principy a algoritmy důležité pro úspěšné předcházení rizikům při práci s informační technologiemi a Internetem, je schopen vysvětlit důležitost zmíněných i dalším lidem; rozlišuje mezi nezávadným a závadným chováním při práci s informačními technologiemi a rozumí možným právním postihům při závadném chování.
+\end{itemize}
+
+Ačkoliv některé z těchto bodů by bylo možné zařadit a schovat pod výše zmíněné oblasti RVP, autor práce se domnívá, že lepší cestou by bylo rozšířit v budoucnosti RVP o oblast \textit{Bezpečnost informačních technologií}. To zejména proto, že samostatná oblast pro \textit{Bezpečnost informačních technologií} je z dlouhodobého hlediska nevyhnutelnou nutností a dedikovaná oblast v RVP povede pro rychlejší, lepší a důkladnější implementaci na straně škol.
 
 
 % === PREREQUISITIES ===
 \newpage
-% TODO: Ocitovat RVP pro gymnázia & RVP pro základní školy
-% TODO: Přijít na to jak správně pojmenovat kapitolu "Vstupní dovednosti"
-% Očekávané výstupy – 1. a 2. období (základní vzdělávání)
-% žák
-% ICT-5-1-01 využívá základní standardní funkce počítače a jeho nejběžnější periferie
-% ICT-5-1-02 respektuje pravidla bezpečné práce s hardwarem i softwarem a postupuje
-%   poučeně v případě jejich závady
-% ICT-5-1-03 chrání data před poškozením, ztrátou a zneužitím
 % Po konzultaci název: Metodika výuky kybernetické bezpečnosti
+% TODO: Ocitovat RVP pro gymnázia & RVP pro základní školy
 \section{Metodika výuky kybernetické bezpečnosti}
-V této části práce jsou vymezeny vstupní dovednosti, kterými by studenti pro úspěšnou výuku kybernetické bezpečnosti měli disponovat. Dále je zde navrženo a argumentováno časové zasazení výuky napříč ročníky, pokryty jsou také možné formy výuky vhodné pro předmět kybernetické bezpečnosti a nezbytné pomůcky pro kvalitní výuku.
+V této části práce jsou vymezeny vstupní dovednosti, kterými by studenti pro úspěšnou výuku kybernetické bezpečnosti měli disponovat. Pokryty jsou zde také možné formy a metody výuky vhodné pro předmět kybernetické bezpečnosti, nezbytné pomůcky pro kvalitní výuku.
+
 % Osnova
 % * Vstupní dovednosti
 % * Pomůcky pro výuku - u počítačů specifikovat operační systém, HW, to samé pro telefony, náhradní řešení bez telefonů
@@ -194,13 +203,49 @@ V této části práce jsou vymezeny vstupní dovednosti, kterými by studenti p
 %           činnost (část s vysvětlováním právní závadnosti)), potřebné pomůcky pro realizaci: jak výkonné musí být počítače, jaké by měly být jejich parametry (asi internet je třeba), jde využít telefony (jak?), interaktivní tabule
 
 \subsection{Vstupní dovednosti}
-Text vstupních dovedností.
+Pro absolvování kurzu kybernetické bezpečnosti by žáci měli mít již nějaké předchozí zkušenosti s prací v počítači a pohybu na Internetu. Jako základní vstupní dovednosti potřebné pro výuku kybernetické bezpečnosti je možné uvažovat výstupní dovednosti vymezené v RVP pro základní školy~\cite{rvpElementary}. 
+
+Výuka kybernetické bezpečnosti popisována v této práci je realizována rozšířením témat probíraných ve výuce předmětu \textit{Informatika a ICT}. Učivo probrané v rámci předmětu je taktéž považováno za prerekvizitní dovednost.
+
+Nevyžadovanou, ale určitě vítanou výhodou je, pokud studenti před začátkem studií látky kybernetické bezpečnosti mají již nějaké předchozí zkušenosti s tím jak z pohledu operačního systému funguje počítač, popřípadě již umí základy programování.
 
 \subsection{Pomůcky pro výuku}
-Test pomůcek ve výuce.
+Výuka kybernetické bezpečnosti si v mnohých případech žádá názornou ukázku probírané látky, neb studenti si znalosti mnohem lépe osvojí budou-li mít možnost přímo sledovat dopad či efekt toho, co bylo právě probráno. V této části jsou v seznamu uvedeny některé z vhodných pomůcek pro výuku, s případným popisem nároků na tyto pomůcky, v některých případech i odůvodnění jejich nutnosti.
+
+\begin{itemize}
+    \setlength{\itemsep}{-3pt}
+    \item Počítač - Počítač by měl být připojený k Internetu a data projektoru, popř. interaktivní tabuli, pro promítání prezentace k hodině a předvádění ukázek. Z hlediska hardwarového vybavení počítače, neexistují speciální požadavky.
+    \item Data projektor.
+    \item Interaktivní tabule - není zcela nutná, ovšem umožňuje, jak její název napovídá, zvýšit úroveň interaktivity se kterou je hodina vedena.
+    \item Chytrý telefon - s připojením na Internet, bluetooth technologií.
+\end{itemize}
 
 \subsection{Časový rozvrh napříč ročníky}
-Text časového rozvrhu napříč ročníky
+Běžná výuka předmětu \textit{Informatika a ICT} na gymnáziích probíhá s dotací 2 hodiny týdně v prvních dvou letech, ve zbývajících dvou letech pak vůbec. Tato práce navrhuje rozšíření této dotace na 3 hodiny výuky v prvních dvou letech a o 2 hodiny výuky týdně na zbývající dva roky.
+
+% Remove footnote separator
+\renewcommand*\footnoterule{}
+\begin{table}[h!]
+\begin{minipage}{\textwidth}
+\centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{Ročník} & \textbf{Původní dotace} & \textbf{Navrhovaná dotace} \\
+    \hline
+    1. Ročník & 2 hodiny týdně & 2 hodiny týdně IICT\footnote[1]{ IICT - Informatika a ICT} + 1 hodina týdně KB\footnote[2]{ KB - Kybernetická bezpečnost} \\
+    2. Ročník & 2 hodiny týdně & 2 hodiny týdně IICT + 1 hodina týdně KB \\
+    3. Ročník & 0 hodin týdně & 1 hodina týdně IICT + 1 hodina týdně KB  \\
+    4. Ročník & 0 hodin týdně & 1 hodina týdně IICT + 1 hodina týdně KB  \\
+    \hline
+    \end{tabular}
+    \caption{\textit{Porovnání obvyklé dotace výuky Informatiky a ICT na gymnáziích a navrhované dotace pro výuku předmětu Informatika a ICT s přihlédnutím na nutnost rozšířit dotaci ve prospěch výuky Kybernetické Bezpečnosti}}
+\end{minipage}
+\end{table}
+
+
+
+
+
 
 \subsection{Formy výuky}
 Způsobů a forem, kterými lze vyučovat a demonstrovat kybernetickou bezpečnost by se jistě dalo vymyslet mnoho. Zde jsou shrnuty formy výuky, které autor práce považuje za efektivní a vhodné v oblasti kybernetické bezpečnosti, společně s argumentací využití právě těchto forem.
@@ -220,6 +265,8 @@ Text formy výuky.
 
 \newpage
 \section{Tématický plán výuky}
+% TODO: Následující řádek dál:
+% Dále je zde navrženo a argumentováno časové zasazení výuky napříč ročníky
 Na následujících stránkách jsou popsány dva možné tématické plány výuky kybernetické bezpečnosti na gymnáziích. První tématický plán uvažuje možnost výuky kybernetické bezpečnosti v rámci výuky hodin informačních technologí po její celou dobu stanovenou školou. Druhý tématický plán je realizován s předpokladem, že například v rámci 3. a 4. ročníku, je pro výuku kybernetické bezpečnosti dedikován samostatný předmět.
 
 V rámci prnvího tématického plánu má výuka kybernetické bezpečnosti sloužit jako \textit{rozšíření} nebo \textit{doplnění}, které je možné vložit do standardní výuky informatiky realizované na gymnáziích. 
@@ -448,6 +495,13 @@ Text přípravy na hodinu.
 
     \bibitem{rvpGym}
     \textit{Rámcový vzdělávací program pro gymnázia}. [online]. Praha: VÚP, 2007. [cit. 2017-09-09]. Dostupné z WWW: $<$http://nuv.cz/file/159$>$.
+
+    \bibitem{rvpElementary}
+    \textit{Rámcový vzdělávací program pro základní vzdělávání}. [online]. Praha: MSMŠT, 2017. [cit. 2017-09-09]. Dostupné z WWW: $<$http://www.nuv.cz/uploads/RVP\_ZV\_2017\_verze\_cerven.pdf$>$.
+
+    \bibitem{svpGymbos}
+    \textit{Školní vzdělávací program: Kráčíme k maturitě. Non scholae, sed vitae discimus (Neučíme se pro školu, ale pro život)}. [online]. Gymnázium Boskovice. [cit. 2017-09-09]. Dostupné z WWW: $<$http://www.gymbos.cz/dokumenty/SVP-VG-GB.pdf$>$
+
 
     \bibitem{presentationPavlaZ}
     ZIELENIECOVÁ, Pavla. \textit{Příprava učitele na výuku. Vzdělávání učitelů.} [online prezentace]. Praha: Katedra didaktiky fyziky, Matematicko-fyzikální fakulta, UK, 2015, [cit. 2017-19-08]. Dostupný z WWW: $<$https://kdf.mff.cuni.cz/vyuka/pedagogika/materialy/2015\%20ZS/8\%20Priprava\\\%20ucitele\%20na\%20vyuku.\%20Legislativni\%20zakotveni\%20ucitele.pdf$>$.
