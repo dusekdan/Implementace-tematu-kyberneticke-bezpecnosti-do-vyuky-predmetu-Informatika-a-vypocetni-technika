@@ -39,16 +39,6 @@
 \newcommand{\facultyName}{Fakulta elektrotechniky a komunikačních technologií}
 \title{\thesisname}
 \author{Bc. Daniel Dušek}
-
-% === WORK TODO LIST ===
-%
-% PRAKTICKÁ ČÁST - TÉMATA, OSNOVY
-% Hodina 3: Bezpečnost na Internetu (mohla by být řazena jako druhá, za Identitu)
-% Hodina 4:  
-%
-% Source from mail: ICT zavedena v rámci nějaké konkrétní vllnovité implementace
-
-
 \begin{document}
 
 % === FRONT PAGE ===
@@ -77,7 +67,6 @@
 \restoregeometry
 
 % === TABLE OF CONTENTS ===
-% Potential TODO: NO line spacing as well?
 \newpage
 \thispagestyle{empty}
 \tableofcontents
@@ -187,20 +176,10 @@ Při přidání výuky kybernetické do výuky Informatiky a ICT na gymnáziích
 Ačkoliv některé z těchto bodů by bylo možné zařadit a schovat pod výše zmíněné oblasti RVP, autor práce se domnívá, že lepší cestou by bylo rozšířit v budoucnosti RVP o oblast \textit{Bezpečnost informačních technologií}. To zejména proto, že samostatná oblast pro \textit{Bezpečnost informačních technologií} je z dlouhodobého hlediska nevyhnutelnou nutností a dedikovaná oblast v RVP povede pro rychlejší, lepší a důkladnější implementaci na straně škol.
 
 
-% === PREREQUISITIES ===
+% === Metodika výuky kybernetické bezpečnosti ===
 \newpage
-% Po konzultaci název: Metodika výuky kybernetické bezpečnosti
-% TODO: Ocitovat RVP pro gymnázia & RVP pro základní školy
 \section{Metodika výuky kybernetické bezpečnosti}
 V této části práce jsou vymezeny vstupní dovednosti, kterými by studenti pro úspěšnou výuku kybernetické bezpečnosti měli disponovat. Pokryty jsou zde také možné formy a metody výuky vhodné pro předmět kybernetické bezpečnosti, nezbytné pomůcky pro kvalitní výuku.
-
-% Osnova
-% * Vstupní dovednosti
-% * Pomůcky pro výuku - u počítačů specifikovat operační systém, HW, to samé pro telefony, náhradní řešení bez telefonů
-% * Časový rozvrh napříč ročníky
-% * Formy výuky 
-%           Bodově z konzultace: předpokládané vstupní dovednosti, ve kterých ročnících by se to mělo vyučovat (předběžně domluveno na všechny), probrat možné formy výuky (výklad, exkurze, protip: přivedení člověka odsouzeného za trestnou 
-%           činnost (část s vysvětlováním právní závadnosti)), potřebné pomůcky pro realizaci: jak výkonné musí být počítače, jaké by měly být jejich parametry (asi internet je třeba), jde využít telefony (jak?), interaktivní tabule
 
 \subsection{Vstupní dovednosti}
 Pro absolvování kurzu kybernetické bezpečnosti by žáci měli mít již nějaké předchozí zkušenosti s prací v počítači a pohybu na Internetu. Jako základní vstupní dovednosti potřebné pro výuku kybernetické bezpečnosti je možné uvažovat výstupní dovednosti vymezené v RVP pro základní školy~\cite{rvpElementary}. 
@@ -273,50 +252,199 @@ Přivedení člověka pohybující se v oblasti kybernetické bezpečnosti do ho
 % ========= PRACTICAL PART =========
 
 \newpage
-\section{Tématický plán výuky}
-% TODO: Následující řádek dál:
-% Dále je zde navrženo a argumentováno časové zasazení výuky napříč ročníky
-Na následujících stránkách jsou popsány dva možné tématické plány výuky kybernetické bezpečnosti na gymnáziích. První tématický plán uvažuje možnost výuky kybernetické bezpečnosti v rámci výuky hodin informačních technologí po její celou dobu stanovenou školou. Druhý tématický plán je realizován s předpokladem, že například v rámci 3. a 4. ročníku, je pro výuku kybernetické bezpečnosti dedikován samostatný předmět.
+\section{Tématický plán výuky kybernetické bezpečnosti}
 
-V rámci prnvího tématického plánu má výuka kybernetické bezpečnosti sloužit jako \textit{rozšíření} nebo \textit{doplnění}, které je možné vložit do standardní výuky informatiky realizované na gymnáziích. 
+Na následujících stránkách je popsán tématický plán výuky, který vychází z předpokladu, že výuka kybernetické bezpečnosti probíhá s dotací jedné hodiny týdně po dobu čtyř let a navazuje na témata probraná v předmětu \textit{Informatika a ICT}. 
 
-% TODO: Doplnit zdroj, že za 5 let nebude dost infosec specialistů.
-V případě druhého plánu, narozdíl od výuky kybernetické bezpečnosti v rámci výuky informatiky umožňuje studentům se přímou soustředit a profilovat v oblasti kybernetické bezpečnosti. Další výhodou takovéto výuky je možnost podání látky v nahuštěnější formě, s vyšším důrazem na konkrétní problémy a jejich správné uchopení. V případě dedikovaného předmětu se není nutné vázat na probírané oblasti ve výuce standardní informatiky, ale je možné se věnovat konkrétním problémům kybernetické bezpečnosti a jejich řešení. Profilování se studentů v oblasti kybernetické bezpečnosti pro ně v dnešní době může být obzvláště zajímavé, neb se očekává, že rokem 2023 bude nedostatek kvalifikovaných specialistů v oblasti kybernetické (a informační) bezpečnosti.
+Tématický plán pokrývající tématické celky předepsané v RVP je sestaven na základě ŠVP Gymnázia Boskovice~\cite{svpGymbos} a je rozšířen o přidané hodiny kybernetické bezpečnosti navazující na učivo probrané v běžných hodinách předmětu \textit{Informatika a ICT}.
+
+\subsection{Plán: 1. Ročník - 1. pololetí}
+
+Tématické celky \textbf{Digitální technologie}, \textbf{Zdroje a vyhledávání informací, komunikace} a \textbf{zpracování a prezentace informací} předepisovány RVP jsou částečně pokrývány během tohoto pololetí v následujících probíraných tématech:
+\begin{itemize}
+    \setlength{\itemsep}{-3pt}
+    \item Informace a její charakter,
+    \item hardware a software,
+    \item operační systémy,
+    \item aplikační programy.
+\end{itemize}
+
+Dále jsou do výuky zařazeny nová témata související s bezpečnostní stránkou standardně probíraného učiva a témata související s kybernetickou bezpečností obecně:
+\begin{itemize}
+    \setlength{\itemsep}{-3pt}
+    \item Bezpečnostní aspekty tématu Informace a její charakter,
+    \item bezpečnostní aspekty tématu Hardware s Software,
+    \item bezpečnostní aspekty tématu Operační systémy,
+    \item bezpečnostní aspekty tématu Aplikační programy.
+\end{itemize}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| l | p{11cm} | p{2cm} |}\hline
+    \textbf{Měsíc} & \textbf{Účivo (množství)} & \textbf{Hodiny} \\ \hline
+    
+    Září & 
+        Informace a její charakter (2x) \newline  
+        Bezpečnostní aspekty tématu Informace a její charakter (2x) & 
+        4 \newline 2 
+    \\ \hline
+
+    Říjen &
+        Informace a její charakter (2x) \newline
+        Hardware a Software (1x) \newline
+        Bezpečnostní aspekty tématu Informace a její charakter (2x) \newline
+        Bezpečnostní aspekty tématu Hardware s Software (1x) &
+        4  \newline 2 \newline 2 \newline 1
+    \\ \hline
+
+    Listopad &
+        Operační systémy (3x) \newline
+        Aplikační programy (1x) \newline
+        Bezpečnostní aspekty tématu Operační systémy (3x) \newline
+        Bezpečnostní aspekty tématu Aplikační programy (1x) &
+        6 \newline 2 \newline 3 \newline 1
+    \\ \hline
+
+    Prosinec &
+        Aplikační programy (2x) \newline 
+        Bezpečnostní aspekty tématu Aplikační programy (2x) &
+        4 \newline 2
+    \\ \hline
+
+    Leden & 
+        Informace a její charakter (1x) \newline
+        Operační systémy (1x) \newline
+        Aplikační programy (1x) \newline
+        Bezpečnostní aspekty tématu Informace a její charakter (1x) \newline
+        Bezpečnostní aspekty tématu Operační systémy (1x) \newline
+        Bezpečnostní aspekty tématu Apliační programy (1x) &
+        2 \newline 2 \newline 2 \newline 1 \newline 1 \newline 1
+    \\ \hline
+\end{tabular}
+    \caption{\textit{Navrhovaný tématický plán pro výuku v 1. pololetí 1. ročníku.}}
+\end{table}
+
+\subsection{Plán: 1. Ročník - 2. pololetí}
+Stejné tématické celky uvedené u prvního pololetí 1. ročníku jsou částečně pokrývány i v průběhu druhého pololetí 1. ročníku a to v následujících probíraných tématech:
+\begin{itemize}
+    \setlength{\itemsep}{-3pt}
+    \item Počítačové sítě,
+    \item internet,
+    \item textový procesor,
+    \item tabulkový procesor,
+    \item počítačová prezentace.
+\end{itemize}
+
+V druhém pololetí jsou kromě bezpečnostních témat souvisejících s probíranou látkou navíc zařazeny přednášky na témata nesouvisející s právě probíranou látkou v předmětu \textit{Informatika a ICT} a zvané přednášky. Témata nesouvisející s právě probíranou látkou by měla reagovat na aktuální problémy a rizika vyvstávající v oblasti kybernetické bezpečnosti.
+
+\begin{itemize}
+    \setlength{\itemsep}{-3pt}
+    \item Bezpečnostní aspekty tématu počítačové sítě,
+    \item bezpečnostní aspekty tématu internet,
+    \item bezpečnostní aspekty tématu textový procesor,
+    \item bezpečnostní aspekty tématu tabulkový procesor,
+    \item bezpečnostní aspekty tématu prezentace,
+    \item práce s antivirovými programy,
+    \item přednáška na aktuální téma z oboru kybernetické bezpečnosti,
+    \item vyhlášení celoroční bezpečnostní hry.
+\end{itemize}
+
+
+\begin{table}[h!]
+\begin{tabular}{| l | p{11cm} | p{2cm} |}\hline
+\textbf{Měsíc} & \textbf{Účivo (množství)} & \textbf{Hodiny} \\ \hline
+    Únor &
+        Počítačové sítě (4x) \newline
+        Bezpečnostní aspekty tématu Počítačové sítě (4x) &
+        8 \newline 4
+    \\ \hline
+
+    Březen &
+        Internet (4x) \newline
+        Bezpečnostní aspekty tématu Internet (4x) &
+        8 \newline 4
+    \\ \hline
+
+    Duben &
+        Textový procesor (4x) \newline
+        Bezpečnostní aspekty tématu Textový procesor (1x) \newline
+        Práce s antivirovými programy (1x) \newline
+        Přednáška na aktuální téma z oboru kybernetické bezpečnosti (2x) &
+        8 \newline 1 \newline 1 \newline 2
+    \\ \hline
+
+    Květen &
+        Tabulkový procesor (4x) \newline
+        Bezpečnostní aspekty tématu Tabulkový procesor (2x) \newline
+        Zvaná přednáška na téma z oboru kybernetické bezpečnosti (2x) &
+        8 \newline 2 \newline 2
+    \\ \hline
+
+    Červen &
+        Počítačová prezentace (3x) \newline
+        Počítačové sítě (1x) \newline
+        Bezpečnostní aspekty tématu Počítačová prezentace (1x) \newline
+        Přednáška na aktuální téma z oboru kybernetické bezpečnosti (1x) \newline
+        Bezpečnostní aspekty tématu Počítačové sítě (1x) &
+        6 \newline 1 \newline 1 \newline 1
+    \\ \hline
+
+    Červenec &
+        Internet (3x) \newline
+        Bezpečnostní aspekty tématu Internet (1x) \newline
+        Bezpečnostní aspekty tématu Počítačové sítě (1x) \newline
+        Vyhlášení celoroční bezpečnostní hry (1x) &
+        6 \newline 1 \newline 1 \newline 1
+    \\ \hline
+\end{tabular}
+    \caption{\textit{Navrhovaný tématický plán pro výuku v 2. pololetí 1. ročníku.}}
+\end{table}
+
+
+\subsection{Plán: 2. Ročník - 1. pololetí}
+Tématické celky \textbf{Digitální technologie}, \textbf{Zdroje a vyhledávání informací, komunikace} a \textbf{zpracování a prezentace informací} předepisovány RVP jsou částečně pokrývány během tohoto pololetí v následujících probíraných tématech:
+\begin{itemize}
+    \setlength{\itemsep}{-3pt}
+    \item Počítačová grafika,
+    \item multimédia,
+    \item webová prezentace,
+\end{itemize}
+
+
+\subsection{Plán: 2. Ročník - 2. pololetí}
+Stejné tématické celky uvedené u prvního pololetí 2. ročníku jsou částečně pokrývány i v průběhu druhého pololetí 2. ročníku a to v následujících probíraných tématech:
+\begin{itemize}
+    \setlength{\itemsep}{-3pt}
+    \item Webová prezentace,
+    \item používání relačních databází,
+    \item algoritmizace.
+\end{itemize}
 
 % Výzkum: Tématický plán by měl obsahovat:
-% * název předmětu, 
-% * hodinovou dotaci (třeba zjistit jak správně tuto dotaci poznačovat),
-% * časové rozvržení výuky,
 % * pravidla hodnocení,
 % * učebnici,
-% * pomůcky (redundance? Nebo tady s tím vymyslím něco jako nutný seznam pomůcek; nebo na základě toho, že to má být v tématickém plánu si vynutím sekci pomůcky znovu)
-% Učivo pro hodiny má být sestaveno na základě ŠVP
-% Bez dalších poznámek, hádám, že tady si budu muset nastudovat jak vypadá tématický plán výuky a pokusit se přijít s vlastním (asi různý témata: spoofing mailů, nedůvěryhodnost spojení se stránkami (možnost napodobení jejich vzhledu), rozeznávání potenciálních útočníků (možná cool hra pro třídu - každému dát papírek s informací, kterou má z někoho zjistit, aniž by si toho ten někdo byl vědom; ne na hodinu ale jako domácí úkol na týden?), nevyžádaná pošta, právní stránka věci)
+
 
 
 \newpage
 \section{Osnova témat v jednotlivých ročnících}
-Tato část práce popisuje rozložení témat napříč jednotlivými ročníky a jejich náročnost. Jsou zde opět uvedeny dvě varianty -- pro výuku kybernetické bezpečnosti v rámci výuky informatiky a pro výuku kybernetické bezpečnosti jako samostatného předmětu.
-% Opět dvě verze: Pro dedikovaný předmět || Pro předmět připlácnutý k informatice
 %Bodově z konzultace: doplnit o didaktické hry (viz. výše), postupy a návody jak to učit. Jestli demonstrace, nebo jen teorie (vždycky demonstrace imho).
 
+
 \newpage
-%Asi potenciálně nejdelší část, hodně si s tím vyhraju, naplánuji časově co se v kolika hodinách bude dělat... ideální bude asi zakomponovat falšování mailu a ukázka jak snadné je udělat aby stránka vypadala stejně jako originální stránka, aniž by byla.
+% TODO: Přidat vypracování slajdů pro jednotlivé hodiny
 \section{Ukázky příprav na hodiny}
 V této kapitole práce jsou prezentovány celkem čtyři ukázky možných příprav na hodiny výuky kybernetické bezpečnosti.
 
 \subsection{Příprava 1 -- Krádeže identity}
-% TODO: Pokud všude bude využívána stejná struktura, přesunout tento výčet výše
-%Text přípravy na hodinu s podvrháváním emailu. Přihlašování se do různých místností pod různými přihlašovacími jmény. Pravděpodobně i stránky s podobnými názvy a stejným designem, ale jiným přijemcem dat sem spadají.
 Příprava na hodinu s tématem \textbf{Krádeže identity} je rozdělena do následujících částí:
     \begin{itemize}
         \setlength{\itemsep}{-3pt}
         \item Specifikace tématu hodiny,
         \item stanovené cíle,
-        %\item plán ověřování vědomostí a dovedností,
         \item náplň hodiny a časový plán,
         \item nutné pomůcky pro hodinu,
-        %\item zadání nepovinného domácího úkolu.
+        \item text snímků přezentace.
     \end{itemize}
 
 Struktura rozložení přípravy na hodinu vychází z doporučené obecné struktury v dokumentu \textit{Příprava učitele na výuku. Vzdělávání učitelů.}~\cite{presentationPavlaZ}, kde tato obecná struktura je upravena tak, aby odpovídala přípravě na hodinu kybernetické bezpečnosti.
@@ -517,3 +645,11 @@ Text přípravy na hodinu.
 
 \end{thebibliography}
 \end{document}
+
+
+
+% DRAFT LEFTOVERS
+% I am very sad about removing the following paragraphs 
+% Na následujících stránkách jsou popsány dva možné tématické plány výuky kybernetické bezpečnosti na gymnáziích. První tématický plán uvažuje možnost výuky kybernetické bezpečnosti v rámci výuky hodin informačních technologí po její celou dobu stanovenou školou. Druhý tématický plán je realizován s předpokladem, že například v rámci 3. a 4. ročníku, je pro výuku kybernetické bezpečnosti dedikován samostatný předmět.
+% V rámci prnvího tématického plánu má výuka kybernetické bezpečnosti sloužit jako \textit{rozšíření} nebo \textit{doplnění}, které je možné vložit do standardní výuky informatiky realizované na gymnáziích. 
+% V případě druhého plánu, narozdíl od výuky kybernetické bezpečnosti v rámci výuky informatiky umožňuje studentům se přímou soustředit a profilovat v oblasti kybernetické bezpečnosti. Další výhodou takovéto výuky je možnost podání látky v nahuštěnější formě, s vyšším důrazem na konkrétní problémy a jejich správné uchopení. V případě dedikovaného předmětu se není nutné vázat na probírané oblasti ve výuce standardní informatiky, ale je možné se věnovat konkrétním problémům kybernetické bezpečnosti a jejich řešení. Profilování se studentů v oblasti kybernetické bezpečnosti pro ně v dnešní době může být obzvláště zajímavé, neb se očekává, že rokem 2023 bude nedostatek kvalifikovaných specialistů v oblasti kybernetické (a informační) bezpečnosti.
