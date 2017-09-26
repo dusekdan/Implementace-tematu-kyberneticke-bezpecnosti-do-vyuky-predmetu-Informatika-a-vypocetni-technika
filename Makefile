@@ -15,6 +15,7 @@ all:
 commit:
 	git add xdusek21.pdf xdusek21.tex
 	git commit -m "Autosave - More content added"
+	git push
 
 todo:
 	$(call get_todo_items)
