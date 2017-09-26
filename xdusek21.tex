@@ -92,7 +92,6 @@ V letech 2007--2009 byla~reakcí českého školství na~prudký rozvoj a~expanz
 Nyní však nastává nová éra, kdy zařízení schopná připojení k~Internetu jsou doslova i~obrazně na~každém našem kroku. Každé zařízení připojené k~Internetu se může stát cílem útoku, stejně jako se obětí počítačové kriminality může stát každá osoba~s těmito zařízeními pracující. Vzniká tedy takto nová potřeba~většího důrazu na~výuku těchto aspektů práce s~informačními technologiemi. Tato práce má za~cíl demonstrovat konkrétní možnou implementaci takové výuky do výuky ICT na~gymnáziích.
 
 % === DICTIONARY ===
-% TODO: Zkontrolovat, že všechna~problematická slova~se vyskytují ve slovníčku pojmů.
 \newpage
 \section{Slovníček pojmů}
 V textu této práce je možné se setkat s~pojmy, které mají speciální význam v~oblasti počítačové či kybernetické bezpečnosti, jenž se často liší od pocitového významu, který by si oblasti neznalý čtenář mohl vytvořit. Tato sekce si klade za~cíl rozptýlit možné nejasnosti a~mnohoznačnosti.
@@ -103,7 +102,7 @@ V textu této práce je možné se setkat s~pojmy, které mají speciální výz
 
 \textbf{Nakažený soubor} -- Soubor v~němž je kromě původního obsahu souboru navíc obsažen škodlivý kód. Škodlivý kód do souboru umístil buď přímo, nebo zprostředkovaně (například prostřednictvím škodlivého programu) útočník.
 
-\textbf{Ransomware} -- Škodlivý program založený na~principu držení rukojmí. Program po~průniku do~počítače zašifruje některé soubory, popřípadě uživateli úplně znemožní práci s~počítačem. Za~zpřístupnění souborů či zařízení je po uživateli požadováno zaplacení výkupného. Zaplacení výkupného nemusí vždy vést k~získání objektu, který je držen jako rukojmí.
+\textbf{Ransomware} -- Škodlivý program založený na~principu držení rukojmí. Program po~průniku do~počítače zašifruje některé soubory, popřípadě uživateli úplně znemožní práci s~počítačem. Za~zpřístupnění souborů či zařízení je po uživateli požadováno zaplacení výkupného. Zaplacení výkupného nemusí vždy vést k~získání objektu, který je držen jako rukojmí~\cite{ransomware}.
 
 \textbf{Phishing} -- Typ útoku při kterém útočník předstírá, že je důvěryhodná, uživateli dobře známá entita, aby uživatele přiměl k~vydání osobních či jinak citlivých informací a~dat.
 
@@ -674,14 +673,7 @@ Během prvního pololetí 4. ročníku jsou probírány nová témata~z oblasti 
 \caption{\textit{Navrhovaný tématický plán pro výuku Informatiky a~ICT ve 4. ročníku}}
 \end{table}
 
-
-% TODO Verify that the paper is 'good enough' even without this chapter at all.
-% \newpage
-% \section{Osnova~témat v~jednotlivých ročnících}
-
-
 \newpage
-% TODO: Přidat vypracování slajdů pro jednotlivé hodiny
 \section{Ukázky příprav na~hodiny}
 V této kapitole práce jsou prezentovány celkem čtyři ukázky možných příprav na~hodiny výuky kybernetické bezpečnosti.
 
@@ -881,8 +873,17 @@ Posledním tématem k~probrání jsou \textit{botnety}. Vyučující opět začn
 Pro splnění cílů hodiny mimořádně není nutné žádné speciální elektronické vybavení. Celou hodinu je možné odvést a~odvykládat ve standardní učebně, avšak vyučující může benefitovat z~dostupnosti počítače napojeného na~data~projektor. Počítač s~data~projektorem může využít k~živým ukázkám vykládané látky a~promítání textů a~obrázků na~snímcích oporné prezentace. Není-li počítač s~data~projektorem k~dispozici, obsah snímků prezentací lze vyměnit za~tabuli a~fix, popřípadě křídu.
 
 \subsubsection{Text snímků prezentace}
-
-
+\includegraphics[scale=0.5]{SecurityFlythroughSlides/p01.pdf} \\
+\vspace{0.5in}
+\includegraphics[scale=0.5]{SecurityFlythroughSlides/p02.pdf} \\
+\vspace{0.5in}
+\includegraphics[scale=0.5]{SecurityFlythroughSlides/p03.pdf} \\
+\vspace{0.5in}
+\includegraphics[scale=0.5]{SecurityFlythroughSlides/p04.pdf} \\
+\vspace{0.5in}
+\includegraphics[scale=0.5]{SecurityFlythroughSlides/p05.pdf} \\
+\vspace{0.5in}
+\includegraphics[scale=0.5]{SecurityFlythroughSlides/p06.pdf} \\
 
 
 
@@ -907,6 +908,10 @@ V poslední kapitole jsou pak uvedeny 4 přípravy do hodiny, které ukazují ja
     Selena~Larsen: Malware researcher helps teen hackers turn skills into careers,
     \\\textit{http://money.cnn.com/2017/07/12/technology/malware-researcher-helps-teen-hackers}.
 
+    \bibitem{ransomware}
+    Mark Russinovich: Hunting Down and Killing Ransomware
+    \\\textit{https://blogs.technet.microsoft.com/markrussinovich/2013/01/02/hunting-down-and-killing-ransomware/}
+
     \bibitem{waveRVP}
     Národní Ústav pro Vzdělávání: Přehled vydávání RVP SOV po vlnách,
     \\\textit{http://www.nuv.cz/t/prehled-vydavani-rvp-sov-po-vlnach}.
@@ -919,7 +924,6 @@ V poslední kapitole jsou pak uvedeny 4 přípravy do hodiny, které ukazují ja
 
     \bibitem{svpGymbos}
     \textit{Školní vzdělávací program: Kráčíme k~maturitě. Non scholae, sed vitae discimus (Neučíme se pro školu, ale pro život)}. [online]. Gymnázium Boskovice. [cit. 2017-09-09]. Dostupné z~WWW: $<$http://www.gymbos.cz/dokumenty/SVP-VG-GB.pdf$>$
-
 
     \bibitem{presentationPavlaZ}
     ZIELENIECOVÁ, Pavla. \textit{Příprava~učitele na~výuku. Vzdělávání učitelů.} [online prezentace]. Praha: Katedra~didaktiky fyziky, Matematicko-fyzikální fakulta, UK, 2015, [cit. 2017-19-08]. Dostupný z~WWW: $<$https://kdf.mff.cuni.cz/vyuka/pedagogika/materialy/2015\%20ZS/8\%20Priprava\\\%20ucitele\%20na\%20vyuku.\%20Legislativni\%20zakotveni\%20ucitele.pdf$>$.
@@ -951,4 +955,3 @@ V poslední kapitole jsou pak uvedeny 4 přípravy do hodiny, které ukazují ja
 %    2 \newline 2 \newline 2
 %    \\ \hline
 % \subsubsection{Metoda~výuky: Didaktická hra~- Celoroční tématika}
-% TODO: Hra~co má probíhat celý rok a~přinášet studentům body.
